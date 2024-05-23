@@ -1,0 +1,58 @@
+@use "../../sass/base.module" as *;
+@use "../../sass/variables" as v;
+
+.footerOuter {
+  background-color: v.$primaryColor;
+  padding-top: v.$sp5;
+  padding-bottom: v.$sp3;
+  color: v.$textInvertColor;
+}
+
+.footer {
+  @extend %container;
+  // margin-top: v.$home-cat-offset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoWrp {
+  transform: scale(1.25);
+}
+
+.mainNavOuter {
+  margin-top: v.$sp4;
+  margin-bottom: calc(v.$sp4 + 1rem);
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    letter-spacing: 0.18em;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+    opacity: 0.7;
+
+    li {
+      padding: 0.2rem calc(v.$sp4 * 1.2);
+      border-right: 1px solid rgba(255, 255, 255, 0.35);
+
+      &:first-child {
+        border-left: 1px solid rgba(255, 255, 255, 0.35);
+      }
+    }
+  }
+}
+
+.copyRight {
+  p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    opacity: 0.5;
+    letter-spacing: 0.05em;
+    margin-top: v.$sp3;
+  }
+}

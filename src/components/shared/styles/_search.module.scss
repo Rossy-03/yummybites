@@ -1,0 +1,12 @@
+@use "../../../sass/variables" as v;
+
+.searchBox {
+  display: flex;
+}
+
+.searchButton {
+  background-color: v.$primaryColor;
+  color: v.$textInvertColor;
+  font-size: 1.9rem;
+  cursor: pointer;
+}

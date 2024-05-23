@@ -1,0 +1,20 @@
+@use "../../sass/base.module" as *;
+@use "../../sass/variables" as v;
+@use "../../sass/typography.module";
+
+.latestrecipes {
+  @extend %container;
+}
+
+.latestrecipesContent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: v.$sp3;
+  row-gap: v.$sp4;
+  margin-bottom: v.$sp5 * 2.2;
+
+  img {
+    width: 100%;
+  }
+}

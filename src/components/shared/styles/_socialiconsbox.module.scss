@@ -1,0 +1,19 @@
+@use "../../../sass/variables" as v;
+
+$iconSize: 2.3rem;
+
+.socialLink {
+  display: inline-block;
+  width: $iconSize;
+  height: $iconSize;
+  line-height: $iconSize;
+  position: relative;
+  vertical-align: middle;
+  font-size: 1em;
+  background-color: v.$primaryColor;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

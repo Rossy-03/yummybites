@@ -1,0 +1,21 @@
+@use "../../sass/base.module" as *;
+@use "../../sass/variables" as v;
+@use "../../sass/typography.module";
+
+.categories {
+  @extend %container;
+  margin-top: v.$home-cat-offset;
+
+  span.categoriesTitle {
+    background-color: #fafafb;
+  }
+}
+
+.categoriesContent {
+  display: flex;
+  gap: v.$sp3;
+
+  > div {
+    flex: 1 1 0%;
+  }
+}

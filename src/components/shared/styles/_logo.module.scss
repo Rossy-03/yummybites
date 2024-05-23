@@ -1,0 +1,38 @@
+@use "../../../sass/variables" as v;
+@use "../../../sass/typography.module";
+
+.logo {
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  letter-spacing: 0.025em;
+  // font-family: v.$opensans;
+
+  span {
+    color: v.$primaryColor;
+    font-weight: 800;
+  }
+}
+
+.logo2 {
+  // font-family: v.$opensans;
+
+  .styledFont {
+    @extend .styled-font;
+    color: v.$secondaryColor;
+    text-transform: lowercase;
+    top: 8px;
+    margin-left: 0;
+    // font-weight: 800;
+  }
+
+  .logoFont {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: v.$primaryColor;
+    position: relative;
+    top: -0.7rem;
+    margin-right: -0.3rem;
+  }
+}

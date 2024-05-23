@@ -1,0 +1,7 @@
+@use "../../../sass/variables" as v;
+
+.socialLinksBox {
+  display: flex;
+  gap: v.$sp1;
+  // padding: 3rem 0;
+}

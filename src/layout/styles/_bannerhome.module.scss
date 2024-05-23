@@ -1,0 +1,50 @@
+@use "sass:math";
+@use "../../sass/variables/" as v;
+
+.bannerHomeOuter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  // height: 15rem;
+  overflow: hidden;
+  align-items: center;
+  justify-items: center;
+
+  .bannerImageWrapper {
+    width: 100%;
+    height: 38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // opacity: 0.8;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.bannerImageWrapper,
+.searchBox {
+  grid-area: 1 / 2 / 1 / 2;
+}
+
+.searchBox {
+  padding: 2.5rem 5rem;
+  padding-bottom: 3.3rem;
+  background-color: v.$secondaryColor;
+  width: 52rem;
+  // margin-top: math.div(v.$home-cat-offset, 2);
+  margin-top: calc(v.$home-cat-offset + 22px);
+  // height: 15rem;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.6rem;
+    color: v.$primaryColor;
+    // line-height: 1.2;
+  }
+}

@@ -1,0 +1,24 @@
+// $primaryColor: #87c03d;
+// $secondaryColor: #f7b724;
+// $primaryColor: #44b42a;
+// $primaryColor: #370606;
+$primaryColor: #3d000e;
+$primaryColorDark: #2b000a;
+$secondaryColor: #f7c510;
+
+$neutralDarkColor: #121212;
+$neutralDarkColor-800: #7d7d7d;
+$neutralLightColor: #fff;
+
+$primaryColorLight-200: #f6eff0;
+
+$textMainColor: $neutralDarkColor;
+$textAccentColor: $primaryColor;
+$textHighlightColor: $secondaryColor;
+$textInvertColor: $neutralLightColor;
+
+:export {
+  primary: $primaryColor;
+  secondary: $secondaryColor;
+  textInvert: $textInvertColor;
+}

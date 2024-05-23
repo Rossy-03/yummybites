@@ -1,0 +1,50 @@
+@use "../../sass/base.module" as *;
+@use "../../sass/variables" as v;
+@use "../../sass/typography.module";
+
+.outerContainer {
+  background-color: #fbf6f7;
+  // background-color: v.$primaryColorDark;
+}
+
+.worldmeals {
+  // @extend %container;
+  // @extend %flex;
+  margin-block: v.$sp5 * 2.2;
+  display: flex;
+
+  // gap: v.$sp3;
+}
+
+.wmImageWrapper,
+.wmAreasWrapper {
+  width: 50%;
+  // flex: 0 0 50%;
+}
+
+.wmAreasWrapper {
+  text-align: center;
+  padding: v.$sp5 v.$sp4;
+  display: flex;
+  align-items: center;
+
+  h3 {
+    margin-bottom: v.$sp3;
+    color: v.$primaryColor;
+    // color: v.$secondaryColor;
+  }
+
+  p {
+    padding-inline: v.$sp5;
+    margin-bottom: v.$sp3;
+    // color: white;
+    // opacity: 0.8;
+  }
+}
+
+.wmImageWrapper {
+  padding-right: v.$sp2;
+  img {
+    width: 50vw;
+  }
+}

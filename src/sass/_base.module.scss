@@ -1,0 +1,14 @@
+%container {
+  max-width: 100em;
+  margin: 0 auto;
+}
+
+%flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex {
+  display: flex;
+}
