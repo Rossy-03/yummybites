@@ -1,0 +1,81 @@
+@use "../../sass/base.module" as *;
+@use "../../sass/variables" as v;
+@use "../../sass/typography.module";
+
+.recipeDetails {
+  @extend %container;
+  display: flex;
+  gap: calc(v.$sp4 * 1.5);
+  position: relative;
+  background-color: #fff;
+  padding: 5rem;
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+}
+
+.ingredients {
+  margin-bottom: v.$sp5;
+  ul {
+    column-count: 3;
+    column-gap: 3rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0.9rem 0;
+      // border-top: 1px solid #dcdcdc;
+      border-bottom: 1px solid #dcdcdc;
+
+      .measure {
+        // color: v.$textAccentColor;
+        // color: #927b80;
+        // color: #b0949a;
+        color: #b56576;
+        font-weight: 300;
+      }
+    }
+    // columns: 2 max-content;
+  }
+}
+
+.instructions {
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    // color: #927b80;
+    // color: v.$textAccentColor;
+    color: #b56576;
+  }
+  p {
+    margin-top: 0.5rem;
+  }
+}
+
+.recInfoWrp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 2rem 3rem;
+}
+
+.recDetailsWrp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  color: #acacac;
+  // color: v.$textAccentColor;
+  font-size: 1.2rem;
+
+  .recTimeIcon {
+    font-size: 3rem;
+    color: #b56576;
+  }
+}

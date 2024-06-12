@@ -39,3 +39,25 @@ export async function getLatestRecipes() {
     console.log(error);
   }
 }
+
+export async function getCategoryRecipes(categoryName) {
+  try {
+    const response = await fetch(API_KEYS.CATEGORY_RECIPES + categoryName);
+    const data = await response.json();
+
+    return data.meals;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function getRecipeDetails(recipeId) {
+  try {
+    const response = await fetch(API_KEYS.RECIPE_DETAILS + recipeId);
+    const data = await response.json();
+
+    return data.meals;
+  } catch (error) {
+    console.log(error);
+  }
+}

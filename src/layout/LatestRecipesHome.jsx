@@ -3,9 +3,9 @@ import { setRecipes } from "../state/recipesSlice";
 import { getLatestRecipes } from "../lib/api";
 import { useEffect } from "react";
 
-import styles from "./styles/_latestrecipeshome.module.scss";
-import { RecipeCard } from "../components/shared/RecipeCard";
+// import styles from "./styles/_latestrecipeshome.module.scss";
 import { shuffle } from "../lib/utils";
+import RecipesSection from "./RecipesSection";
 
 const LatestRecipesHome = () => {
   const recipes = useSelector((state) => state.recipes.recipes);
@@ -23,19 +23,7 @@ const LatestRecipesHome = () => {
   }, []);
 
   return (
-    <div className="outer-container">
-      <div className={styles.latestrecipes}>
-        <h2 className="section-title">
-          <span>Latest Recipes</span>
-        </h2>
-        <div className={styles.latestrecipesContent}>
-          {recipes.slice(0, 8).map((recipe, i) => (
-            <RecipeCard key={i} recipe={recipe} />
-            // <CategoryCard key={i} category={category} />
-          ))}
-        </div>
-      </div>
-    </div>
+    <RecipesSection title={"Latest Recipes"} recipes={recipes.slice(0, 8)} />
   );
 };
 

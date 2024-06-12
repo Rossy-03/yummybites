@@ -2,9 +2,10 @@ import colors from "../sass/variables/_colors.module.scss";
 import styles from "./styles/_nav.module.scss";
 import Logo from "../components/shared/Logo";
 import SocialLinks from "../components/shared/SocialLinks";
+import MainNav from "./MainNav";
 
 const Nav = () => {
-  console.log(colors.primary);
+  // console.log(colors.primary);
 
   return (
     <div className="outer-container">
@@ -16,12 +17,7 @@ const Nav = () => {
       </div>
       <div className={styles.mainNavOuter}>
         <div className={styles.mainNavBox}>
-          <ul>
-            <li>Home</li>
-            <li>Categories</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
+          <MainNav />
         </div>
       </div>
     </div>
